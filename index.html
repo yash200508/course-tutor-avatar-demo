@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A scripted demonstration of a course tutoring experience.">
+  <title>Course tutor · concept demo</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="top"><div><span class="eyebrow">COURSE TUTOR / CONCEPT DEMO</span><h1>Let's learn together.</h1><p>A preview of a patient, conversational course tutor.</p></div><span class="badge">Scripted preview · no live AI</span></header>
+    <div class="notice"><strong>About this preview</strong><span>These conversations are prewritten examples using fictional course material. The AI model and real course content will be integrated later.</span></div>
+    <div class="layout">
+      <section class="chat" aria-label="Tutor conversation">
+        <div class="chat-head"><div class="orb" aria-hidden="true"><span>✦</span></div><div><h2>Course tutor</h2><p>Fictional logic lesson</p></div><button id="reset" class="text-button" type="button">Start over</button></div>
+        <div id="messages" class="messages" aria-live="polite" aria-relevant="additions text">
+          <article class="message assistant"><span class="speaker">TUTOR</span><p>Hi! Pick an example below to see how a tutoring conversation could work.</p></article>
+        </div>
+        <div class="composer demo-actions"><p id="action-label">Choose a conversation to explore</p><div id="choices" class="choice-list"></div><button id="next" class="primary" type="button" hidden>Continue conversation <span aria-hidden="true">↗</span></button></div>
+        <p class="footnote">Scripted demonstration · No student data is collected or stored.</p>
+      </section>
+      <aside class="side"><div class="avatar-card"><div class="avatar-frame"><img src="./tutor-avatar.png" alt="AI-generated portrait showing the proposed tutor appearance"><span>AVATAR CONCEPT</span></div><div class="avatar-info"><div><strong>Your tutor</strong><p>Still image · visual concept</p></div><button id="voice" type="button" class="secondary" aria-pressed="false">Turn voice on</button></div><p class="avatar-caption">Voice uses your browser. The image is not animated or lip-synced.</p></div><div class="side-card"><span class="eyebrow">DESIGNED FOR LEARNING</span><h2>A little guidance goes a long way.</h2><p>Explore a few examples of the intended tutoring style.</p><ul><li><b>Think together</b><span>See how a tutor might use an example and a focused question.</span></li><li><b>Learn from mistakes</b><span>See how it might gently address a misconception.</span></li><li><b>Stay grounded</b><span>Open the example source shown below a response.</span></li></ul></div><div class="note"><strong>What comes next</strong><p>The team will connect a real model, course retrieval, source verification, and a speaking avatar. This preview cannot answer arbitrary questions.</p></div></aside>
+    </div>
+  </main>
+  <script src="./app.js" defer></script>
+</body>
+</html>
